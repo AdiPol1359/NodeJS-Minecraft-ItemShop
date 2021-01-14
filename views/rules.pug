@@ -1,0 +1,7 @@
+extends layouts/main-layout.pug
+
+block body
+    span(style="display: block; width: 100%; text-align: center; color: #242424; font-weight: 700; font-size: 28px; margin-top: 30px; margin-bottom: 30px;")= rules.title
+
+    each rule in rules.rules
+        p(style='display: block; margin: 0; margin-left: 20px;')= rule

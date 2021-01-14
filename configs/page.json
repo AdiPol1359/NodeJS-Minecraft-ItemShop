@@ -1,0 +1,6 @@
+{
+    "host": "127.0.0.1",
+    "enableHTTPS": false,
+    "portHTTP": 80,
+    "portHTTPS": 443
+}

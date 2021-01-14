@@ -1,0 +1,15 @@
+[
+    {
+        "serviceID": 1254,
+        "smsNumber": 70068,
+        "name": "VIP (5zł)",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "lvlupDescription": "VIP NA EDYCJE | nick: {nickname} | code: {code}",
+        "buttonText": "Zakup",
+        "iconUrl": "fas fa-crown",
+        "rconCommands": [
+            "say Gracz {nick} zakupil range VIP!", 
+            "say Dziekujemy za wsparcie!"
+        ]
+    }
+]

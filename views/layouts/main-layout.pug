@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+html(lang="pl")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title= config.pageTitle
+        
+        meta(name='description' content='')
+        meta(name='keywords' content='')
+        meta(name='author' content='AdiPol1359')
+
+        link(rel='icon' href= config.iconPath)
+
+        link(href='https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap' rel='stylesheet')
+        link(href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet")
+
+        script(src='https://kit.fontawesome.com/0526910272.js' crossorigin='anonymous')
+
+        script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous')
+
+        link(href="/css/main.css" rel='stylesheet')
+        link(href="/css/navigation.css" rel='stylesheet')
+        link(href="/css/hide-navigation.css" rel='stylesheet')
+        link(href="/css/footer.css" rel='stylesheet')
+        block styles
+
+        style
+            .
+                body {
+                    background-color: #{config.backgroundColor}
+                }
+
+                nav {
+                    height: #{indexConfig.navbar.height}px;
+                    background-color: #{indexConfig.navbar.bgColor};
+                }
+
+                nav > ul > li {
+                    font-weight: #{indexConfig.navbar.text.weight};
+                }
+
+                nav > ul > li > a {
+                    color: #{indexConfig.navbar.text.normal};
+                }
+
+                nav > ul > li > a:hover {
+                    color: #{indexConfig.navbar.text.hover};
+                }
+
+                nav > i.fa-bars {
+                    color: #{indexConfig.navbar.switchMenu};
+                }
+
+                .footer {
+                    height: #{indexConfig.footer.height}px;
+                    background-color: #{indexConfig.footer.bgColor};
+                    color: #{indexConfig.footer.fontColor};
+                }
+
+                div.services-box div.service {
+                    height: #{indexConfig.service.height}px;
+                    background-color: #{indexConfig.service.bgColor};
+                    border-radius: #{indexConfig.service.borderRadius}px;
+                    color: #{indexConfig.service.fontColor};
+                }
+
+                div.service div.icon i {
+                    color: #{indexConfig.service.icon.fontColor};
+                }
+
+                div.service div.button button {
+                    background-color: #{indexConfig.service.buttonBgColor.normal};
+                }
+
+                div.service div.button button:hover {
+                    background-color: #{indexConfig.service.buttonBgColor.hover};
+                }
+
+                div.title-box img {
+                    filter: blur(#{indexConfig.titleContainer.background.blur}px);
+                }
+
+                div.title-box div.text div.ip {
+                    font-weight: #{indexConfig.titleContainer.title.weight};
+                }
+
+                div.title-box div.text div.description {
+                    font-size: #{indexConfig.titleContainer.description.fontSize}px;
+                    font-weight: #{indexConfig.titleContainer.description.weight};
+                }
+
+                div.title-box {
+                    height: #{indexConfig.titleContainer.height}px;
+                }
+
+                div.title-box div.text div.description button {
+                    background-image: linear-gradient(#{gradient});
+                }
+
+                div.service div.icon {
+                    background-color: #{indexConfig.service.icon.bgColor};
+                }
+
+            if indexConfig.navbar.shadow
+                .
+                    nav {
+                        -webkit-box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.45);
+                        -moz-box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.45);
+                        box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.45);
+                    }
+
+            if indexConfig.service.shadow
+                .
+                    div.services-box div.service {
+                        -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.3);
+                        -moz-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.3);
+                        box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.3);
+                    }
+
+            if indexConfig.titleContainer.background.xCenter
+                .
+                    div.title-box img {
+                        left: 50%;
+                        top: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                    }
+            else
+                .
+                    div.title-box img {
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+        script(src='/js/navigation.js' defer)
+        block scripts
+    body
+        nav
+            if indexConfig.navbar.logo
+                img(src= config.iconPath width='55' height='55' draggable='false' onclick="window.location.href='/'")
+
+            i.fas.fa-bars
+            ul
+                li
+                    a(href='/' class=(path == '/' ? 'active' : '')) Strona g&lstrok;&oacute;wna
+                li
+                    a(href='/regulamin' class=(path == '/regulamin' ? 'active' : '')) Regulamin
+                div(style='clear: both;')
+
+        .hide-menu
+            ul
+                li
+                    a(href='/') Strona g&lstrok;&oacute;wna
+                li
+                    a(href='/regulamin') Regulamin
+                
+                div(style='clear: both;')
+                i.fas.fa-times
+
+        block body
+
+        .footer
+            img(src=config.iconPath width=90 height=90 draggable=false)
+            div(class='description')
+                p
+                    | &copy #{indexConfig.footer.ip} 2020 - Created by 
+                    a(href="https://www.youtube.com/channel/UC9RjY3qOcpHow3CQkR6nC5g?view_as=subscriber" target="_blank") AdiPol1359
+
+                p Wszelkie prawa zastrzeżone!

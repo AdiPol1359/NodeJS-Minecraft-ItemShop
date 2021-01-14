@@ -1,0 +1,5 @@
+{
+    "privateKey": "/etc/letsencrypt/live/domena.pl/privkey.pem",
+    "certificate": "/etc/letsencrypt/live/domena.pl/cert.pem",
+    "chain": "/etc/letsencrypt/live/domena.pl/chain.pem"
+}

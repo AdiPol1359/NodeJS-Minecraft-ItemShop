@@ -1,0 +1,57 @@
+extends layouts/main-layout.pug
+
+block styles
+  link(href='/css/title-box.css' rel='stylesheet')
+  link(href='/css/services-box.css' rel='stylesheet')
+  link(href='/css/modal.css' rel='stylesheet')
+
+block body
+    .title-box
+        img(src= indexConfig.titleContainer.background.url)
+        .text
+            .ip
+                each val in ip
+                    span(style=`color: ${val.style}`)= val.value
+            .description
+                each val in description
+                    span(style=`color: ${val.style}`)= val.value
+                button(onclick="window.location.href='" + `${indexConfig.titleContainer.button.url}` + "'")= indexConfig.titleContainer.button.text
+
+    .services-box
+        .row  
+            each service in services
+                .col-xl-3.col-lg-4.col-sm-6.col-12
+                    .service
+                        .icon
+                            i(class=service.iconUrl)
+
+                        .name= service.name
+
+                        .description= service.description
+
+                        .button
+                            button(type="button" data-toggle="modal" data-target="#payment-" + `${service.serviceID}`)= service.buttonText
+
+
+    each service in services
+        div.modal.fade(id="payment-" + `${service.serviceID}` tabindex="-1" role="dialog" aria-hidden="true")
+            div.modal-dialog(role="document")
+                .modal-content
+                    .modal-header
+                        .title= service.name
+                        .close-btn
+                            button.close(type="button" data-dismiss="modal" aria-label="Close")
+                            span(aria-hidden="true") &times;
+                
+                    .modal-body
+                        form(method="POST", action="/payment")
+                            .input-box
+                                span Nick
+                                input(type='text' placeholder='Wpisz swój nick' name="nickname" autocomplete="off")
+                            .input-box
+                                span Kod SMS
+                                input(type='text' placeholder='Wpisz kod SMS' name="code" autocomplete="off")
+                            
+                            input(type="hidden" name="serviceID" value= service.serviceID)
+
+                            button KUP!

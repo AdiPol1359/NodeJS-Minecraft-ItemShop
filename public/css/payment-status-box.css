@@ -1,0 +1,11 @@
+div.payment-status-box {
+    padding: 18px;
+}
+
+div.payment-status-box span {
+    display: block;
+}
+
+div.payment-status-box span.number {
+    margin-top: 33px;
+}

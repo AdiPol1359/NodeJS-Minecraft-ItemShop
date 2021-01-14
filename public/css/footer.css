@@ -1,0 +1,26 @@
+div.footer {
+    position: relative;
+    margin-top: 75px;
+    padding: 23px;
+}
+
+div.footer div.description {
+    position: absolute;
+    left: 23px;
+    bottom: 23px;
+}
+
+div.footer div.description p {
+    margin-bottom: 8px;
+}
+
+div.footer div.description p:nth-child(2) {
+    margin-bottom: 0;
+}
+
+div.footer img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}

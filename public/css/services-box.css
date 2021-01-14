@@ -1,0 +1,73 @@
+div.services-box {
+    width: calc(100% - 50px);
+    margin: auto;
+    margin-top: 35px;
+}
+
+div.row {
+    margin: auto;
+}
+
+div.services-box div.service {
+    margin-top: 45px;
+}
+
+div.service div.icon {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+div.service div.icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 45px;
+    color: #fff;
+}
+
+div.service div.name {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+div.service div.description {
+    text-align: center;
+    padding: 0 30px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+div.service div.button {
+    position: absolute;
+    width: calc(100% - 30px);
+    bottom: 10px;
+}
+
+div.service div.button button {
+    display: block;
+    height: 55px;
+    position: relative;
+    width: calc(100% - 20px);
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border: none;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+div.service div.button button:hover {
+    background-color: #000;
+    transition: background-color 0.3s;
+}

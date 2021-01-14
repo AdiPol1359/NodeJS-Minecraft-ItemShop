@@ -1,0 +1,62 @@
+div.modal-header {
+    padding: 0 8px;
+    font-size: 28px;
+    position: relative;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+div.modal-header div.title {
+    font-size: 18px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.modal-header div.close-btn {
+    margin-left: auto;
+}
+
+div.modal-header div.close-btn button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+}
+
+
+div.modal-body div.input-box {
+    background-color: #f7f7f7;
+	border: 1px solid #eee;
+	padding: 11px 15px;
+	border-radius: 5px;
+	margin-top: 8px;
+}
+
+div.modal-body div.input-box input {
+    display: block;
+	width: 100%;
+	font-size: 18px;
+	outline: none;
+	border: none;
+	background-color: #f7f7f7;
+	color: #555;
+	margin-top: 3px;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+div.modal-body button {
+    display: block;
+    height: 55px;
+    position: relative;
+    width: calc(100% - 20px);
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    border: none;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}

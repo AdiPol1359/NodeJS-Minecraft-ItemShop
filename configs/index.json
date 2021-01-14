@@ -1,0 +1,70 @@
+{
+    "navbar": {
+        "height": 85,
+        "bgColor": "#fff",
+        "shadow": true,
+        "text": {
+            "normal": "#404040",
+            "hover": "#000",
+            "weight": 700
+        },
+        "logo": true
+    },
+
+    "hideMenu": {
+        "bgColor": "#fff",
+        "text": {
+            "weight": 400,
+            "color": "#000"
+        }
+    },
+
+    "titleContainer": {
+        "shadow": true,
+        "height": 350,
+        "background": {
+            "url": "img/background.png",
+            "blur": 4,
+            "xCenter": true
+        },
+        "title": {
+            "text": "{#ff9900}Twoje{#fff}IP{#ff9900}.PL",
+            "weight": 700
+        },
+        "description": {
+            "text": "{#fff}Najlepsza sieć serwerów {#ff9900}minecraft{#fff}!",
+            "fontSize": 17,
+            "weight": 400
+        },
+        "button": {
+            "text": "Dołącz już dziś!",
+            "gradient": "#ffd900|#ff9900|#ffd900",
+            "shadow": true,
+            "shadowColor": "#ffd900",
+            "url": "minecraft://openServersTab?addExternalServer=MottoSerwera|twojeip.pl:19132"
+        }
+    },
+
+    "service": {
+        "height": 400,
+        "bgColor": "#fff",
+        "fontColor": "#212529",
+        "icon": {
+            "fontColor": "#fff",
+            "bgColor": "#1f1f1f"
+        },
+        "buttonBgColor": {
+            "normal": "#171717",
+            "hover": "#000"
+        },
+        "borderRadius": 0,
+        "shadow": true
+    },
+    
+    "footer": {
+        "height": 205,
+        "ip": "TwojeIP.PL",
+        "bgColor": "#0d1019",
+        "fontColor": "#6a6f7d"
+    }
+}

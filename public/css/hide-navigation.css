@@ -1,0 +1,62 @@
+div.hide-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0s 0.2s;
+}
+
+div.hide-menu-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+div.hide-menu i.fa-times {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+}
+
+div.hide-menu i.fa-times:hover {
+    cursor: pointer;
+}
+
+div.hide-menu ul {
+    padding: 35px 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    top: 20px;
+}
+
+div.hide-menu ul li {
+    padding: 10px 35px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+div.hide-menu ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+div.hide-menu ul li a:hover {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 730px) {
+    div.hideNav-visible {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0s 0.2s;
+    }
+}

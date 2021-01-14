@@ -1,0 +1,14 @@
+extends layouts/main-layout.pug
+
+block styles
+    link(href='/css/payment-status-box.css' type='text/css' rel='stylesheet')
+
+block body
+    .payment-status-box
+        if error == false
+            span(style='color: green') Operacja zakończona pomyślnie!
+        else
+            span(style='color: red') Wystąpił problem podczas realizacji żądania!
+
+        span(class='description' style='display: inline') OPIS BŁĘDU: 
+        span(style='font-weight: 700; display: inline') #{!description ? "BRAK" : description}
