@@ -29,9 +29,9 @@ NodeJS-Minecraft-ItemShop to darmowy sklep minecraft umożliwiający kupno usłu
  
 ## Jak dokonać testową płatność?
  Aby dokonać testową płatność, musisz spełniać następujące wymogi:
- 1. ID Clienta lvlup musi być ustawione na 1
- 2. Usługa na której chcesz dokonać płatność musi mieć ustawiony numer SMS na 70068
- Następnie wystarczy w kodzie SMS wpisać TEST (wielkość liter ma znaczenie)
+ - ID Clienta lvlup musi być ustawione na 1
+ - Usługa na której chcesz dokonać płatność musi mieć ustawiony numer SMS na 70068
+Następnie wystarczy w kodzie SMS wpisać TEST (wielkość liter ma znaczenie)
 
  
 ## Krótka prezentacja zdjęciowa
