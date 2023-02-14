@@ -55,7 +55,7 @@ NodeJS-Minecraft-ItemShop to darmowy sklep minecraft umożliwiający kupno usłu
  - lvlup.pro
  
 ## Przydatne informacje
- - Kontakt do twórcy: AdiPol1359#9189
+ - Kontakt do twórcy: AdiPol1359#8770
  - [VIDEO TUTORIAL] [Jak odpalić stronę na localhost? (Windows)](https://www.youtube.com/watch?v=M56VJKcZSCw)
  - [VIDEO TUTORIAL] [Jak zaktualizować zmiany na stronie?](https://www.youtube.com/watch?v=JfOWhW12K9c)
  
